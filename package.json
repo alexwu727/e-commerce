@@ -1,0 +1,23 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "e-commerce site using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwu727/e-commerce.git"
+  },
+  "author": "Alex Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexwu727/e-commerce/issues"
+  },
+  "homepage": "https://github.com/alexwu727/e-commerce#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
