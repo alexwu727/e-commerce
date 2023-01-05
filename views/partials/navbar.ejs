@@ -5,15 +5,61 @@
             <li><a class="nav-item <%= title == " Home".replace(/\s+/g, '' ) ? "active" :"" %>" href="/">Home</a></li>
             <li><a class="nav-item <%= title == " Sandbox".replace(/\s+/g, '' ) ? "active" :"" %>"
                     href="/sandbox">Sandbox</a></li>
-            <li style="float:right"><a id="login-btn">Login</a></li>
+            <li style="float:right"><a id="loginBtn1">Login</a></li>
+            <li style="float:right"><a id="registerBtn1">Register</a></li>
         </ul>
     </div>
 </nav>
 <div class="after-nav"></div>
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-container">
+        <span class="close" id="loginClose">&times;</span>
+        <h1>Login</h1>
+        <form action="">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="username">Password</label>
+            <input type="password" name="password" id="password">
+            <input type="checkbox" name="remember" id="login-remember" />
+            <label for="login-remember" style="-moz-user-select: none;-webkit-user-select: none;"
+                onselectstart="return false;">Remember my email</label>
+            <div class="modalBtnContainer">
+                <button type="submit">Login</button>
+            </div>
+            <a id="forgotPasswordBtn">Forgot Password</a>
+            <a id="registerBtn2">Register</a>
+        </form>
+    </div>
+</div>
+<!-- Register Modal -->
+<div id="registerModal" class="modal">
+    <div class="modal-container">
+        <span class="close" id="registerClose">&times;</span>
+        <h1>Register</h1>
+        <form action="">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="username">Password</label>
+            <input type="password" name="password" id="password">
+            <div class="modalBtnContainer">
+                <button type="submit">Register</button>
+            </div>
 
-
-<!-- <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/sandbox">Sandbox</a></li>
-    <li><a href=""></a></li>
-</ul> -->
+            <a id="loginBtn2">Login</a>
+        </form>
+    </div>
+</div>
+<!-- Forgot Password Modal -->
+<div id="forgotPasswordModal" class="modal">
+    <div class="modal-container">
+        <span class="close" id="forgotPasswordClose">&times;</span>
+        <h1>Forgot Password</h1>
+        <form action="">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <button type="submit" class="modalBtn">Send</button>
+        </form>
+    </div>
+</div>
+<script src="/js/modal.js"></script>
