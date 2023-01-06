@@ -43,6 +43,8 @@
         <form action="">
             <label for="username">Username</label>
             <input type="text" name="username" id="username">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
             <label for="username">Password</label>
             <input type="password" name="password" id="password">
             <div class="modalBtnContainer">
@@ -61,7 +63,37 @@
         <form action="">
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
-            <button type="submit" class="modalBtn">Send</button>
+            <div class="modalBtnContainer">
+                <button id="verifyBtn">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="verifyModal" class="modal">
+    <div class="modal-container">
+        <span class="close" id="verifyClose">&times;</span>
+        <h1>Enter Code</h1>
+        <form action="">
+            <label for="text">Code</label>
+            <input type="text" name="verifyCode" id="verifyCode">
+            <div class="modalBtnContainer">
+                <button id="resetPasswordBtn">Verify</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="resetPasswordModal" class="modal">
+    <div class="modal-container">
+        <span class="close" id="resetPasswordClose">&times;</span>
+        <h1>Reset Password</h1>
+        <form action="">
+            <label for="password">New Password</label>
+            <input type="password" name="password" id="password">
+            <div class="modalBtnContainer">
+                <button type="submit">Reset</button>
+            </div>
         </form>
     </div>
 </div>
